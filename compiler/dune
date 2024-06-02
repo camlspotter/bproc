@@ -1,0 +1,10 @@
+(library
+ (public_name bproc)
+ (name bproc)
+ (libraries
+   ocaml-compiler-libs.common
+   xtra
+   timedesc)
+ (preprocess
+  (pps ppx_yojson_conv))
+ (flags :standard))

@@ -1,0 +1,9 @@
+(library
+ (name xtra)
+ (package bproc)
+ (libraries 
+   mtime.clock.os
+   ; lwt
+   unix
+   ppx_yojson_conv_lib)
+ (flags :standard))

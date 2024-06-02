@@ -1,0 +1,13 @@
+(library
+ (name xtra_test)
+ (package bproc)
+ (foreign_stubs
+  (language c)
+  (names rusage_stubs))
+ (preprocess
+  (pps ppx_yojson_conv))
+ (libraries
+   xtra
+   alcotest
+   ; lwt.unix
+   posix-uname))
